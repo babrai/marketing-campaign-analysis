@@ -1,9 +1,9 @@
-## Задача 1 — Подготовка данных
+# Task 1 — Data Preparation
 
-**Цель:** создать сводную таблицу для оценки рекламных кампаний  
-📁 _Результат_: `data/marketing_summary_by_date_channel_campaign.csv`
+Goal: Create a summary table to evaluate marketing campaign performance
+Output: `data/marketing_summary_by_date_channel_campaign.csv`
 
-**Превью:**
+Preview:
 
 | date       | media_source       | campaign         | installs | revenue | costs   | impressions | clicks |
 |------------|--------------------|------------------|----------|----------|------------|--------------|-----------|
@@ -13,12 +13,12 @@
 
 ---
 
-## Задача 2 — Анализ кампаний TikTok
+# Task 2 — TikTok Campaign Analysis
 
-**Цель:** определить, какие кампании на канале `tiktokglobal_int` эффективны по критерию ROAS_7 > 0.18  
-📁 _Результат_: `data/tiktok campaign eval.csv`
+Goal: Identify which campaigns on the tiktokglobal_int channel are effective based on the criterion ROAS_7 > 0.18
+Output: `data/tiktok campaign eval.csv`
 
-**Превью:**
+Preview:
 
 | campaign       | costs       | total_revenue_7 | roas_7 | status          |
 |----------------|--------------|----------------------|----------|-------------------|
@@ -29,25 +29,23 @@
 
 ---
 
-## Задача 3 — Проверка корректности атрибуции
+# Task 3 — Attribution Validation
+Goal: Check the correctness of user attribution for the googleadwords_int channel.
+Results:
+ - Total users: 29,767
+ - With attribution: 20,711
+ - Without attribution: 9,056 (30.42%)
+ - With googleadwords_int: 1,457 (7.03% of attributed users)
 
-**Цель:** проверить корректность атрибуции пользователей канала `googleadwords_int`
-
-**Результаты:**
-- Всего пользователей: 29 767
-- С атрибуцией: 20 711
-- Без атрибуции: 9 056 (30.42 %)
-- С `googleadwords_int`: 1 457 (7.03 % от всех с атрибуцией)
-
-**Выводы:**
-- Доля пользователей без атрибуции — 30 %, что может указывать на проблему с обработкой установок
-- Доля `googleadwords_int` — 7 %, что выглядит низкой
-- Возможна потеря части пользователей канала `googleadwords_int` — требует дополнительной проверки
+Conclusions:
+ - 30% of users lack attribution, which may indicate an issue in install tracking or attribution setup.
+ - The googleadwords_int share is only 7%, which seems unusually low.
+ - Potential data loss or incorrect processing for googleadwords_int users — further investigation recommended.
 
 ---
 
-## Стек
-- Python, pandas  
-- SQLite (через `sqlite3`)  
-- Jupyter Notebook
+# Tech Stack:
+ - Python, pandas
+ - SQLite (sqlite3)
+ - Jupyter Notebook
 
