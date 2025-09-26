@@ -1,6 +1,7 @@
-# Task 1 — Data Preparation
+## Task 1 — Data Preparation
 
 Goal: Create a summary table to evaluate marketing campaign performance
+
 Output: `data/marketing_summary_by_date_channel_campaign.csv`
 
 Preview:
@@ -13,9 +14,10 @@ Preview:
 
 ---
 
-# Task 2 — TikTok Campaign Analysis
+## Task 2 — TikTok Campaign Analysis
 
 Goal: Identify which campaigns on the tiktokglobal_int channel are effective based on the criterion ROAS_7 > 0.18
+
 Output: `data/tiktok campaign eval.csv`
 
 Preview:
@@ -29,8 +31,10 @@ Preview:
 
 ---
 
-# Task 3 — Attribution Validation
+## Task 3 — Attribution Validation
+
 Goal: Check the correctness of user attribution for the googleadwords_int channel.
+
 Results:
  - Total users: 29,767
  - With attribution: 20,711
@@ -44,7 +48,7 @@ Conclusions:
 
 ---
 
-# Tech Stack:
+## Tech Stack:
  - Python, pandas
  - SQLite (sqlite3)
  - Jupyter Notebook
